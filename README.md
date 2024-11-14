@@ -9,7 +9,7 @@
 
   `pip install dotenv`
 
-### Instrukcja urochomienia
+### Instrukcja uruchomienia
 
 1. Do głównego folderu dodaj plik tekstowy "Zadanie dla JJunior AI Developera - tresc artykulu.txt" na podstawie, którego będzie generowana
    zawartość HTML.
