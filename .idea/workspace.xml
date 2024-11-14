@@ -4,8 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="23a877d9-143f-438e-afbd-c3bfb52bb4a0" name="Changes" comment="More advanced prompt to generate response based on task criteria">
+    <list default="true" id="23a877d9-143f-438e-afbd-c3bfb52bb4a0" name="Changes" comment="Added catching errors in functions and some code cleanup">
+      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/podglad.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/szablon.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/artykul.html" beforeDir="false" afterPath="$PROJECT_DIR$/artykul.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -13,24 +17,31 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "UnluckyLuki"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;UnluckyLuki&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/UnluckyLuki/OXIDO_Rekrutacja.git",
-    "accountId": "c3403eaa-bfc9-4d73-9088-ae5459b65610"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/UnluckyLuki/OXIDO_Rekrutacja.git&quot;,
+    &quot;accountId&quot;: &quot;c3403eaa-bfc9-4d73-9088-ae5459b65610&quot;
   }
-}]]></component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 2
-}]]></component>
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 2
+}</component>
   <component name="ProjectId" id="2onYuebY2qbq7fv02vEG9aCCyCI" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -39,6 +50,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
     "Python.main.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "master",
@@ -53,6 +65,9 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\themr\PycharmProjects\OXIDO_Rekrutacja" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\themr\PycharmProjects\OXIDO_Rekrutacja" />
     </key>
   </component>
@@ -97,7 +112,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1731507030902</updated>
-      <workItem from="1731507032207" duration="10229000" />
+      <workItem from="1731507032207" duration="12588000" />
+      <workItem from="1731584615938" duration="12603000" />
     </task>
     <task id="LOCAL-00001" summary="Initial Commit">
       <option name="closed" value="true" />
@@ -139,7 +155,23 @@
       <option name="project" value="LOCAL" />
       <updated>1731510787267</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Added catching errors in functions and some code cleanup">
+      <option name="closed" value="true" />
+      <created>1731519659661</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1731519659661</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Added catching errors in functions and some code cleanup">
+      <option name="closed" value="true" />
+      <created>1731519668208</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1731519668208</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -151,9 +183,10 @@
     <MESSAGE value="Adding and testing function responsible for connection and getting response from openai api" />
     <MESSAGE value="First prompt and saving to file checking if ai generates valid HTML code" />
     <MESSAGE value="More advanced prompt to generate response based on task criteria" />
-    <option name="LAST_COMMIT_MESSAGE" value="More advanced prompt to generate response based on task criteria" />
+    <MESSAGE value="Added catching errors in functions and some code cleanup" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added catching errors in functions and some code cleanup" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/OXIDO_Rekrutacja$main.coverage" NAME="main Coverage Results" MODIFIED="1731519202510" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/OXIDO_Rekrutacja$main.coverage" NAME="main Coverage Results" MODIFIED="1731588348250" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>

@@ -77,12 +77,12 @@ if __name__ == '__main__':
                   "3.Don't use css or java scripts code \n"
                   "4.Add placeholder images in places where its needed in your opinion with attribute src=\"image_placeholder.jpg\" \n"
                   "5.Add attribute alt for each image based on what should it represents as well as caption under image \n"
+                  "6.Pack all the tags in <article> tag"
                   "6.Don't generate ``` tag before and after code \n"
                   )
         response = ai_response(prompt)
         if response is not None and hasattr(response, 'choices') and response.choices:
             content_to_save = response.choices[0].message.content
-            print(content_to_save)
             save_response_to_html_file(content_to_save, "artykul.html")
         else:
             logging.error(f"Something went wrong while communicating with OpenAI API.")
